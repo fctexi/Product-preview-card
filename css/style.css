@@ -1,0 +1,110 @@
+html {
+    font-size: 62.5%;
+    /* 1.6rem = 16px */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--cream);
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "imagem-produto info-produto";
+    border-radius: 10px;
+    width: 600px;
+    background-color: var(--white);
+}
+
+.imagem-produto {
+    grid-area: imagem-produto;
+    background: url(../images/image-product-desktop.jpg) center center no-repeat;
+    background-size: cover;
+    width: 300px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.info-produto {
+    grid-area: info-produto;
+    padding: 30px;
+}
+
+.info-produto h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--grey-blue);
+}
+
+.info-produto h1 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    width: 190px;
+    color: var(--secondary-color);
+    padding-block: 20px;
+}
+
+.info-produto p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    width: 220px;
+    color: var(--grey-blue);
+}
+
+.info-produto ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 190px;
+}
+
+.info-produto ul li {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    padding-block: 20px;
+}
+
+.info-produto ul li:last-child {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--grey-blue);
+    text-decoration: line-through;
+}
+
+.info-produto .btn-comprar {
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--white);
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+    transition: 0.3s ease-in-out;
+}
+
+.info-produto .btn-comprar::before {
+    content: "";
+    background: url(../images/icon-cart.svg) center center no-repeat;
+    background-size: cover;
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+
+.info-produto .btn-comprar:hover {
+    background-color: hsl(159, 36%, 21%);
+}
+
+.attribution {
+    padding: 10px;
+}
