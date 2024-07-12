@@ -36,4 +36,4 @@ I also learned how to create various types of CSS such as reset.css, style.css, 
 
 ### Links
 
-- Solution URL: [Product preview card component solution](https://fctexi.github.io/Product-preview-card-/)
+- Solution URL: [Product preview card component solution](https://fctexi.github.io/Product-preview-card/)
